@@ -1,0 +1,30 @@
+﻿@model List<Product_WebApplication2.Models.Product>
+
+<h1>Products</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Expiration Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+                <td>@product.Category</td>
+                <td>@product.ExpirationDate.ToShortDateString()</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@product.Id">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@product.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-action="Create">Create New Product</a>

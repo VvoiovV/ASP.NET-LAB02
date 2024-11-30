@@ -1,0 +1,8 @@
+﻿@model Product_WebApplication2.Models.Product
+
+<h1>Product Details</h1>
+<p>Name: @Model.Name</p>
+<p>Price: @Model.Price</p>
+<p>Category: @Model.Category</p>
+<p>Expiration Date: @Model.ExpirationDate.ToShortDateString()</p>
+<a asp-action="Index">Back to list</a>
