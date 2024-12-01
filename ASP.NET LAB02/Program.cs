@@ -25,11 +25,19 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 app.MapControllerRoute(name: "cars_shortcut",
                 pattern: "moto",
                 defaults: new { controller = "Car", action = "List" });
 app.Run();
+=======
+app.Run();
+>>>>>>> c3c395388fea5d2473f0bb6f6bc1e4af2a454227
+=======
+app.Run();
+>>>>>>> c3c395388fea5d2473f0bb6f6bc1e4af2a454227
 =======
 app.Run();
 >>>>>>> c3c395388fea5d2473f0bb6f6bc1e4af2a454227
