@@ -10,7 +10,6 @@ namespace Product_WebApplication2.Controllers
             new Product { Id = 1, Name = "Apple", Price = 1.50m, Category = "Fruit", ExpirationDate = DateTime.Now.AddMonths(1) },
             new Product { Id = 2, Name = "Milk", Price = 2.00m, Category = "Dairy", ExpirationDate = DateTime.Now.AddDays(10) }
         };
-
         public IActionResult Index()
         {
             return View(products);
